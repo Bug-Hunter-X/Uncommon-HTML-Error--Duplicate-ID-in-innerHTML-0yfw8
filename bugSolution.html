@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Corrected HTML</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    // Correct approach:  Modify the content of the existing element or use appendChild
+    document.getElementById("myDiv").innerHTML = "This is the correct way";
+    // Alternative approach using appendChild
+    let newDiv = document.createElement('div');
+    newDiv.textContent = 'This is added using appendChild';
+    document.getElementById('myDiv').appendChild(newDiv);
+  </script>
+</body>
+</html>
