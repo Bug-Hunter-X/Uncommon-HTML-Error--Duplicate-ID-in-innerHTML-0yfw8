@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Uncommon HTML Error</title>
+</head>
+<body>
+  <p>This is a paragraph.</p>
+  <div id="myDiv"></div>
+
+  <script>
+    // Incorrect use of innerHTML to directly insert an element with an ID that already exists
+    document.getElementById("myDiv").innerHTML = "<div id='myDiv'>This will cause issues</div>";
+  </script>
+</body>
+</html>
